@@ -136,22 +136,42 @@
 
 /* ---------- BOTÃO DE MOSTRAR/OCULTAR SENHA ---------- */
 
-/* O campo da senha vira a "referência" de posição (relative),
-   para eu conseguir colocar o olhinho dentro dele */
+/* A área da senha serve de referência para o olhinho */
 .campo-senha {
   position: relative;
 }
 
-/* O olhinho fica "solto" (absolute) no canto direito do campo.
-   O top: 34px desce ele até a altura do input */
+/* Posiciona o botão dentro do campo de senha */
 .btn-olho {
   position: absolute;
   right: 10px;
   top: 34px;
-  background: none; /* sem fundo */
-  border: none; /* sem borda */
+
+  /* Centraliza o desenho do olho */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Deixa o botão sem fundo e sem borda */
+  background: transparent;
+  border: none;
+  padding: 4px;
+
+  /* Usa as cores que já existem no projeto */
+  color: var(--cinza-texto);
   cursor: pointer;
-  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
+/* Muda a cor quando o mouse passa pelo botão */
+.btn-olho:hover {
+  color: var(--vermelho);
+}
+
+/* Mostra onde o botão está quando usamos o teclado */
+.btn-olho:focus-visible {
+  outline: 2px solid var(--vermelho);
+  outline-offset: 2px;
 }
 
 /* ---------- RODAPÉ ---------- */

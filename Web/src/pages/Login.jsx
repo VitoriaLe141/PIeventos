@@ -104,8 +104,8 @@ function Login() {
       <div className="login-painel">
         <div className="login-topo">
           <div className="logo">PI</div>
-          <h1>PIeventos</h1>
-          <p>Conectando você aos eventos da faculdade</p>
+          <h1>AgendaTech</h1>
+          <p>Conectando você aos eventos da Fatec</p>
         </div>
 
         <form onSubmit={aoEnviar} noValidate>
@@ -190,7 +190,7 @@ function Login() {
           {mensagem && <p className="msg-sucesso">{mensagem}</p>}
         </form>
 
-        <footer className="login-rodape">PIeventos © 2026</footer>
+        <footer className="login-rodape">AgendaTech © 2026</footer>
       </div>
     </div>
   );
