@@ -1,0 +1,165 @@
+/* ==========================================
+   ESTILOS DA TELA DE LOGIN
+   ========================================== */
+
+/* ---------- FUNDO DA PÁGINA ---------- */
+
+/* O min-height: 100vh faz o fundo ocupar a tela inteira.
+   Com flex, eu centralizo o painel no meio da tela.
+   O fundo é cinza claro com dois detalhes em vermelho nos cantos */
+
+   
+.login-fundo {
+  min-height: 100vh;
+  display: flex;
+  align-items: center; /* centraliza na vertical */
+  justify-content: center; /* centraliza na horizontal */
+  padding: 16px;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(214, 40, 40, 0.12) 0, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(214, 40, 40, 0.1) 0, transparent 40%),
+    var(--cinza-fundo);
+}
+
+/* ---------- PAINEL BRANCO ---------- */
+
+/* O painel tem no máximo 400px de largura e cantos arredondados.
+   Em telas pequenas (celular), ele ocupa a largura disponível */
+.login-painel {
+  width: 100%;
+  max-width: 400px;
+  background: var(--branco);
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: var(--sombra);
+  animation: aparecer 0.4s ease; /* chama a animação que criei logo abaixo */
+}
+
+/* Animação de entrada: o painel começa transparente e um pouco
+   para baixo, e vai subindo até ficar na posição normal */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- PARTE DE CIMA (logo e títulos) ---------- */
+
+.login-topo {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* Quadradinho vermelho com as letras PI.
+   O margin 0 auto centraliza ele na horizontal */
+.logo {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--vermelho);
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 16px;
+}
+
+.login-topo h1 {
+  font-size: 1.6rem;
+}
+
+/* Frase em cinza embaixo do nome */
+.login-topo p {
+  color: var(--cinza-texto);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+/* ---------- CAMPOS (rótulo + input + erro) ---------- */
+
+/* Deixa o rótulo, o input e o erro um embaixo do outro (coluna) */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px; /* espaço entre os elementos */
+  margin-bottom: 16px;
+}
+
+.campo label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* Visual normal do input: borda cinza e cantos arredondados */
+.campo input {
+  padding: 12px;
+  border: 1px solid var(--cinza-borda);
+  border-radius: var(--raio);
+  font-size: 1rem;
+  outline: none; /* tira a borda azul padrão do navegador */
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Quando eu clico no campo (foco), a borda fica vermelha com um brilho */
+.campo input:focus {
+  border-color: var(--vermelho);
+  box-shadow: 0 0 0 3px rgba(214, 40, 40, 0.15);
+}
+
+/* Classe que o React coloca quando existe um erro no campo */
+.campo input.com-erro {
+  border-color: var(--vermelho);
+}
+
+/* Mensagem de erro que vem do servidor (ex: RA ou senha incorretos) */
+.msg-erro-login {
+  margin-top: 12px;
+  text-align: center;
+  color: var(--vermelho);
+  font-size: 0.9rem;
+}
+/* Mensagem de sucesso, em verde */
+.msg-sucesso {
+  margin-top: 12px;
+  text-align: center;
+  color: #15803d;
+  font-size: 0.9rem;
+
+}
+
+/* ---------- BOTÃO DE MOSTRAR/OCULTAR SENHA ---------- */
+
+/* O campo da senha vira a "referência" de posição (relative),
+   para eu conseguir colocar o olhinho dentro dele */
+.campo-senha {
+  position: relative;
+}
+
+/* O olhinho fica "solto" (absolute) no canto direito do campo.
+   O top: 34px desce ele até a altura do input */
+.btn-olho {
+  position: absolute;
+  right: 10px;
+  top: 34px;
+  background: none; /* sem fundo */
+  border: none; /* sem borda */
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+/* ---------- RODAPÉ ---------- */
+
+.login-rodape {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--cinza-texto);
+}
+
