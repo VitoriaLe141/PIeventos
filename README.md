@@ -1,16 +1,35 @@
-# React + Vite
+# PIeventos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 1. Sobre o projeto
 
-Currently, two official plugins are available:
+O **PIeventos** é um site desenvolvido como parte de um Projeto Integrador acadêmico da FATEC. Seu objetivo é facilitar o acesso às informações sobre eventos da instituição, reunindo os dados em um ambiente digital de fácil utilização.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+O projeto busca contribuir para a divulgação dos eventos e proporcionar uma experiência prática e acessível aos usuários.
 
-## React Compiler
+## 2. Tecnologias utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+As tecnologias utilizadas no desenvolvimento do projeto incluem:
 
-## Expanding the ESLint configuration
+- **React:** desenvolvimento da interface do usuário.
+- **HTML:** estruturação das páginas.
+- **CSS:** estilização e responsividade.
+- **JavaScript:** implementação das funcionalidades.
+- **Node.js:** execução do ambiente de backend.
+- **Express:** criação e gerenciamento das rotas da API.
+- **MySQL:** armazenamento e gerenciamento dos dados.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 3. Equipe e créditos
+
+Projeto desenvolvido por estudantes da FATEC como parte das atividades acadêmicas do curso de Sistemas para Internet.
+
+**Integrantes da equipe:**
+
+- Laura Francini Emerich
+- Sara Lorraine Martins
+- Vitória Letícia Fernandes
+- Yasmin Rodrigues Astori
+
+
+**Instituição:** FATEC  
+**Projeto:** Projeto Integrador — PIeventos  
+**Ano:** 2026
