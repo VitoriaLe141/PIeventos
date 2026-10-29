@@ -70,27 +70,30 @@ function Login() {
 
     try {
       // fetch faz o pedido ao servidor. O await espera a resposta chegar
-      const resposta = await fetch(`${URL_SERVIDOR}/login`, {
+      const resposta = await fetch(`${URL_SERVIDOR}/auth/login`, {
         method: "POST", // envio dados, então uso POST
         headers: { "Content-Type": "application/json" },
         // JSON.stringify transforma o objeto em texto para viajar pela internet
-        body: JSON.stringify({ ra, senha }),
+        body: JSON.stringify({ login: ra, password:senha }),
       });
 
       // Transformo a resposta do servidor de volta em objeto
       const dados = await resposta.json();
-
+      console.log( dados );
       // resposta.ok é true quando deu certo (códigos 200 a 299)
-      if (!resposta.ok) {
+      if (dados.message !== 'sucess') {
+        console.log( "erro login ..." );
         setErroLogin(dados.mensagem); // mostra "RA ou senha incorretos."
         return;
       }
 
       // Deu certo! O servidor devolveu os dados do usuário
       setMensagem(`Bem-vindo(a), ${dados.usuario.nome}! Perfil: ${dados.usuario.tipo}`);
-        } catch (erro) {
+
+      alert(mensagem);
+    } catch (erro) {
       // Mostra o erro verdadeiro no Console (F12)
-      console.log("Erro no login:", erro);
+      //console.log("Erro no login:", erro);
       setErroLogin("Não consegui falar com o servidor. Ele está ligado?");
     } finally {
       // O finally roda sempre, dando certo ou errado: reabilita o botão
