@@ -15,7 +15,6 @@ As tecnologias utilizadas no desenvolvimento do projeto incluem:
 - **CSS:** estilização e responsividade.
 - **JavaScript:** implementação das funcionalidades.
 - **Node.js:** execução do ambiente de backend.
-- **Express:** criação e gerenciamento das rotas da API.
 - **MySQL:** armazenamento e gerenciamento dos dados.
 
 ## 3. Equipe e créditos
