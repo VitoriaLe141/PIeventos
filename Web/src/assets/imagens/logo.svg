@@ -1,0 +1,62 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 330 64"
+    width="330"
+    height="64"
+>
+    <!-- Ícone do calendário -->
+    <rect
+        x="2"
+        y="5"
+        width="54"
+        height="54"
+        rx="13"
+        fill="#C91F27"
+    />
+
+    <!-- Desenho do calendário -->
+    <rect
+        x="15"
+        y="19"
+        width="28"
+        height="27"
+        rx="3"
+        fill="none"
+        stroke="#FFFFFF"
+        stroke-width="3"
+    />
+
+    <!-- Parte superior do calendário -->
+    <path
+        d="M15 27 H43"
+        stroke="#FFFFFF"
+        stroke-width="3"
+    />
+
+    <!-- Argolas do calendário -->
+    <path
+        d="M22 15 V22 M36 15 V22"
+        stroke="#FFFFFF"
+        stroke-width="3"
+        stroke-linecap="round"
+    />
+
+    <!-- Nome AgendaTech -->
+    <text
+        x="68"
+        y="44"
+        font-family="Arial, sans-serif"
+        font-size="29"
+        font-weight="700"
+        fill="#17243A"
+    >Agenda</text>
+
+    <text
+        x="172"
+        y="44"
+        font-family="Arial, sans-serif"
+        font-size="29"
+        font-weight="700"
+        fill="#C91F27"
+    >Tech</text>
+</svg>
