@@ -6,8 +6,8 @@
    ========================================== */
 
 // Importação da logo e do avatar padrão
-import logo from "../assets/images/logo.svg";
-import avatar from "../assets/images/avatar-default.svg";
+import logo from "../assets/imagens/logo.svg";
+import avatar from "../assets/imagens/avatar-default.svg";
 
 function Sidebar() {
   return (

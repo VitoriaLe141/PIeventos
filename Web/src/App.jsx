@@ -5,8 +5,11 @@
    vou colocar as outras páginas aqui.
    ========================================== */
 
-// Importei a página de login que eu criei
+// Import página de login
 import Login from "./pages/Login";
+
+// Import página inicial
+import PaginaInicial from "./pages/PaginaInicial";  
 
 function App() {
   // Aqui eu uso a página como se fosse uma tag HTML

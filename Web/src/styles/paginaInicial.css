@@ -1,0 +1,111 @@
+/* ==========================================
+   AGENDA TECH - PÁGINA INICIAL
+
+   Folha de estilos da página principal.
+   ========================================== */
+
+
+   /* ==========================================
+   1. MENU LATERAL (SIDEBAR)
+   ========================================== */
+
+/* Estrutura principal da barra lateral */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    padding: 24px 18px;
+
+    background-color: var(--branco);
+
+    display: flex;
+    flex-direction: column;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* Logo do AgendaTech */
+.sidebar-logo {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.sidebar-logo img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+}
+
+/* Informações do usuário */
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+/* Foto de perfil */
+.sidebar-avatar {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+}
+
+/* Nome e função do usuário */
+.sidebar-user-info h3 {
+    font-size: 15px;
+    color: var(--texto);
+}
+
+.sidebar-user-info span {
+    font-size: 13px;
+    color: var(--cinza-texto);
+}
+
+/* Navegação do menu */
+.sidebar-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Links do menu */
+.sidebar-link {
+    display: block;
+
+    padding: 12px 14px;
+
+    color: var(--cinza-texto);
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    border-radius: var(--raio);
+
+    transition: background 0.2s, color 0.2s;
+}
+
+/* Efeito ao passar o mouse */
+.sidebar-link:hover {
+    background-color: #fce8e8;
+    color: var(--vermelho);
+}
+
+/* Página atualmente selecionada */
+.sidebar-link.active {
+    background-color: #fce8e8;
+    color: var(--vermelho);
+    font-weight: 600;
+}
+
+/* Parte inferior da sidebar */
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 15px;
+
+    border-top: 1px solid var(--cinza-borda);
+}
