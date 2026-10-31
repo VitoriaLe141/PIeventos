@@ -2,13 +2,14 @@
    ESTILOS DA TELA DE LOGIN
    ========================================== */
 
-/* ---------- FUNDO DA PÁGINA ---------- */
+
+/* ==========================================
+   1. FUNDO DA PÁGINA
+   ========================================== */
 
 /* O min-height: 100vh faz o fundo ocupar a tela inteira.
    Com flex, eu centralizo o painel no meio da tela.
    O fundo é cinza claro com dois detalhes em vermelho nos cantos */
-
-   
 .login-fundo {
   min-height: 100vh;
   display: flex;
@@ -21,7 +22,10 @@
     var(--cinza-fundo);
 }
 
-/* ---------- PAINEL BRANCO ---------- */
+
+/* ==========================================
+   2. PAINEL BRANCO
+   ========================================== */
 
 /* O painel tem no máximo 400px de largura e cantos arredondados.
    Em telas pequenas (celular), ele ocupa a largura disponível */
@@ -48,7 +52,10 @@
   }
 }
 
-/* ---------- PARTE DE CIMA (logo e títulos) ---------- */
+
+/* ==========================================
+   3. PARTE DE CIMA (LOGO E TÍTULOS)
+   ========================================== */
 
 .login-topo {
   text-align: center;
@@ -82,7 +89,10 @@
   margin-top: 4px;
 }
 
-/* ---------- CAMPOS (rótulo + input + erro) ---------- */
+
+/* ==========================================
+   4. CAMPOS (RÓTULO + INPUT + ERRO)
+   ========================================== */
 
 /* Deixa o rótulo, o input e o erro um embaixo do outro (coluna) */
 .campo {
@@ -125,16 +135,19 @@
   color: var(--vermelho);
   font-size: 0.9rem;
 }
+
 /* Mensagem de sucesso, em verde */
 .msg-sucesso {
   margin-top: 12px;
   text-align: center;
   color: #15803d;
   font-size: 0.9rem;
-
 }
 
-/* ---------- BOTÃO DE MOSTRAR/OCULTAR SENHA ---------- */
+
+/* ==========================================
+   5. BOTÃO DE MOSTRAR/OCULTAR SENHA
+   ========================================== */
 
 /* A área da senha serve de referência para o olhinho */
 .campo-senha {
@@ -174,7 +187,10 @@
   outline-offset: 2px;
 }
 
-/* ---------- RODAPÉ ---------- */
+
+/* ==========================================
+   6. RODAPÉ
+   ========================================== */
 
 .login-rodape {
   margin-top: 24px;
@@ -182,4 +198,3 @@
   font-size: 0.8rem;
   color: var(--cinza-texto);
 }
-

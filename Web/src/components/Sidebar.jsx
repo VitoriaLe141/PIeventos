@@ -5,14 +5,15 @@
    e as opções de navegação.
    ========================================== */
 
+
 // Importação da logo e do avatar padrão
 import logo from "../assets/imagens/logo.svg";
 import avatar from "../assets/imagens/avatar-default.svg";
 
+
 function Sidebar() {
   return (
     <aside className="sidebar">
-
       {/* Logo do AgendaTech */}
       <div className="sidebar-logo">
         <img src={logo} alt="AgendaTech" />
@@ -34,7 +35,6 @@ function Sidebar() {
 
       {/* Menu de navegação */}
       <nav className="sidebar-navigation">
-
         <a href="#" className="sidebar-link active">
           Início
         </a>
@@ -50,7 +50,6 @@ function Sidebar() {
         <a href="#" className="sidebar-link">
           Minhas inscrições
         </a>
-
       </nav>
 
       {/* Opção de sair */}
@@ -59,10 +58,10 @@ function Sidebar() {
           Sair
         </a>
       </div>
-
     </aside>
   );
 }
+
 
 // Disponibiliza o componente para outras páginas
 export default Sidebar;
